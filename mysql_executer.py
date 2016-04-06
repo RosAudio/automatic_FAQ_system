@@ -22,7 +22,11 @@ class MySQL_Executer(object):
 		'''
 		self.__cursor.execute('select %s from where ')
 
-	def insert_record(self):
+	def insert_record(self,record):
+		'''
+		insert a record into database
+		param@ record: a tuple of a record's size and a segmented record. eg: (10, 'question answer')
+		'''
 		self.__cursor.execute()
 
 	def query(self,pos):
